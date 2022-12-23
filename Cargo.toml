@@ -1,0 +1,12 @@
+[package]
+name = "Plugin"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "plugin"
+crate-type = ["dylib"]
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking"] }
+serde_json = "1.0.57"
